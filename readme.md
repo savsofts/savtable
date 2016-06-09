@@ -52,7 +52,7 @@ fourth value contain where condition.
 fifth & sixth value contain order by statement.
 
 it will return following query:
-select bid,first_name,last_name from basic order by bid DESC limit 0,30
+		select bid,first_name,last_name from basic order by bid DESC limit 0,30
 
 
 
@@ -74,7 +74,7 @@ here first value of array contain the columns you want to publish in table.
 second value contain the multidimensional array to join the base table.		
 
 it will return following query:
-select basic.bid,basic.first_name,basic.last_name,user_group.group_name from basic join user_group on basic.gid=user_group.gid order by bid DESC limit 0,30
+		select basic.bid,basic.first_name,basic.last_name,user_group.group_name from basic join user_group on basic.gid=user_group.gid order by bid DESC limit 0,30
 
 
 example 3) - multiple where conditions
