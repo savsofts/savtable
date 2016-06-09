@@ -31,8 +31,9 @@ For more information check demo files.
 
 Advance configuration:
 
-In second parameter you can pass an array with more attributes
+In second parameter you can pass an array with more attributes.
 example 1) 
+
 
 		$attr=array(
 		"column"=>array('bid','first_name','last_name'),
@@ -44,6 +45,7 @@ example 1)
 		);
 		$data['table_list'] = $this->savtable->table_list('basic',$attr);
 
+		
 here first value of array contain the columns you want to publish in table.
 second & thrid value contain the limit and number of rows per page.	
 fourth value contain where condition.
@@ -58,6 +60,7 @@ select bid,first_name,last_name from basic order by bid DESC limit 0,30
 
 example 2) - Join
 
+
 		$attr=array(
 		'column'=>array('basic.bid','basic.first_name','basic.last_name','user_group.group_name'),
 		'join'=>array(
@@ -66,6 +69,7 @@ example 2) - Join
 		);
 		$data['table_list'] = $this->savtable->table_list('basic',$attr);
 
+		
 here first value of array contain the columns you want to publish in table.
 second value contain the multidimensional array to join the base table.		
 
@@ -106,11 +110,12 @@ $data['table_list'] = $this->savtable->table_list('basic',$attr);
 
 Add css class name into table
 
+
 $attr=array(
 		'table_class_name'=>'my_table'
 		);
 $data['table_list'] = $this->savtable->table_list('basic',$attr);
 
-It will return output as
-<table class='my_table'>
+
+
 
