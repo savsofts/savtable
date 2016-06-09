@@ -17,12 +17,12 @@ controllers/Welcome.php and views/table_list.php are optional, it contain demo c
 
 To generate table list in views:
 
-// load library
-$this->load->library('savtable');
-// call table_list function by passing mysql table name as first parameter.
-$data['table_list'] = $this->savtable->table_list('mysql_table_name_here');
-// $data['table_list'] variable contain the result, which you can print at view page.
-$this->load->view('table_list',$data);
+		// load library
+		$this->load->library('savtable');
+		// call table_list function by passing mysql table name as first parameter.
+		$data['table_list'] = $this->savtable->table_list('mysql_table_name_here');
+		// $data['table_list'] variable contain the result, which you can print at view page.
+		$this->load->view('table_list',$data);
 
 
 For more information check demo files.
@@ -101,20 +101,20 @@ fourth & fifth value contain order by statement.
 example 4) - custom query
 
 
-$attr=array(
-		"query"=>"select * from basic"
-		);
-$data['table_list'] = $this->savtable->table_list('basic',$attr);
+		$attr=array(
+				"query"=>"select * from basic"
+				);
+		$data['table_list'] = $this->savtable->table_list('basic',$attr);
 
 
 
 Add css class name into table
 
 
-$attr=array(
-		'table_class_name'=>'my_table'
-		);
-$data['table_list'] = $this->savtable->table_list('basic',$attr);
+		$attr=array(
+				'table_class_name'=>'my_table'
+				);
+		$data['table_list'] = $this->savtable->table_list('basic',$attr);
 
 
 
